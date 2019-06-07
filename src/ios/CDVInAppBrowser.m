@@ -241,7 +241,7 @@
         if (weakSelf.inAppBrowserViewController != nil) {
             if (!tmpWindow) {
                 CGRect frame = [[UIScreen mainScreen] bounds];
-                UIWindow *tmpWindow = [[UIWindow alloc] initWithFrame:frame];
+                tmpWindow = [[UIWindow alloc] initWithFrame:frame];
             }
             UIViewController *tmpController = [[UIViewController alloc] init];
             [tmpWindow setRootViewController:tmpController];
